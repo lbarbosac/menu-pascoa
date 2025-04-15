@@ -63,6 +63,9 @@ header svg:hover {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     width: 50%;
     cursor: pointer;

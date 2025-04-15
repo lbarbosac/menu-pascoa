@@ -2,7 +2,8 @@
 const produtos = [
     {imagem:'https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F462397%2F1638790540_1SZ.jpg%3Fv%3D638796563477300000&w=1280&q=75', produto: 'Ovo de Páscoa Sonho de Valsa com Recheio', preco: 59.90},
     {imagem: 'https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F577302%2F7514250775_1SZ.jpg%3Fv%3D638796546541430000&w=1280&q=75', produto: 'Ovo de Páscoa Chocolate ao Leite', preco: 69.90},
-    {imagem: 'https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F408669%2F7087418610_1SZ.jpg%3Fv%3D638790693546970000&w=1280&q=75', produto: 'Ovo de Páscoa Patrulha Canina de Chocolate', preco: 79.90}
+    {imagem: 'https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F408669%2F7087418610_1SZ.jpg%3Fv%3D638790693546970000&w=1280&q=75', produto: 'Ovo de Páscoa Patrulha Canina de Chocolate', preco: 79.90},
+    {imagem: 'https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F30046134%2F2893971989_1SZ.jpg%3Fv%3D638793881612100000&w=1280&q=75', produto: 'Ovo de Páscoa Irresitível Ouro Branco 359g', preco: 89.90}
 ];
 
 let conteudoProdutos = '';
