@@ -7,7 +7,7 @@ const produtos = [
 
 let conteudoProdutos = '';
 produtos.forEach( function(produto){
-    conteudoProdutos += '<div class="caixa-produto"><img src="'+produto.imagem+'" alt=""><h1>'+produto.produto+'</h1><div id="caixa-produto2"><h2 id="preco">'+produto.preco+'</h2><button>Comprar</button></div></div>';
+    conteudoProdutos += '<div class="caixa-produto"><img src="'+produto.imagem+'" alt=""><h1>'+produto.produto+'</h1><div id="caixa-produto2"><h2 id="preco"> R$ '+produto.preco+'</h2><button>Comprar</button></div></div>';
 });
 
 document.getElementById('container').innerHTML = conteudoProdutos;
