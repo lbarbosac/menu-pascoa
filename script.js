@@ -13,3 +13,9 @@ produtos.forEach( function(produto){
 });
 
 document.getElementById('container').innerHTML = conteudoProdutos;
+
+// aqui é para fazer funcionar o carrinho de compras.
+
+const cesta = [
+    
+]

@@ -88,3 +88,8 @@ button:hover {
     opacity: 0.9;
 }
 
+#carrinho {
+    display: flex;
+    justify-content: center;
+}
+
