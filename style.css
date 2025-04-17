@@ -90,6 +90,55 @@ button:hover {
 
 #carrinho {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 40%;
 }
+
+#header-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(39, 52, 42, 0.347);
+    width: 100%;
+}
+
+#header-carrinho svg {
+    width: 30px;
+    height: 30px;
+}
+
+#main-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+}
+
+#caixa-produto-carrinho {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.283);
+    border-radius: 10px;
+}
+
+#caixa-produto-carrinho img {
+    width: 100%;
+    width: 80px;
+    object-fit: cover;
+}
+
+#caixa-produto-carrinho button {
+    background-color: #fff;
+    color: #28a745;
+}
+
+#contador {
+    display: flex;
+
+}
+
 
