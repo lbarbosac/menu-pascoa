@@ -16,6 +16,16 @@ document.getElementById('container').innerHTML = conteudoProdutos;
 
 // aqui é para fazer funcionar o carrinho de compras.
 
-const cesta = [
-    
-]
+// contador
+
+const diminuirButton = document.getElementById('diminuir');
+const somarButton = document.getElementById('somar');
+const quantidadeButton = document.getElementById('quantidade');
+
+let value = quantidadeButton.value;
+
+somarButton.addEventListener('click',() => {
+    value = ++value;
+    quantidadeButton.value = value;
+});
+

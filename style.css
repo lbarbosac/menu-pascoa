@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
     color: #fff;
     padding: 25px;
     box-shadow: 0 2px 10px rgba(39, 52, 42, 0.347);
-
 }
 
 header svg {
@@ -68,31 +67,38 @@ header svg:hover {
 #preco {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-button {
+#caixa-produto2 button {
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    width: 50%;
     cursor: pointer;
     border-radius: 5px;
     background-color: #28a745;
     color: #fff;
+    width: 50%;
     height: 35px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     opacity: 0.9;
 }
 
-#carrinho {
+#container-carrinho {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
+    margin-top: 25rem; /*mudar*/
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.537);
 }
+
+/*comeca o header do carrinho*/
 
 #header-carrinho {
     display: flex;
@@ -100,45 +106,146 @@ button:hover {
     align-items: center;
     background-color: #28a745;
     color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 10px rgba(39, 52, 42, 0.347);
     width: 100%;
+    padding: .3rem;
+    box-shadow: 0 2px 10px rgba(39, 52, 42, 0.475);
 }
 
 #header-carrinho svg {
-    width: 30px;
-    height: 30px;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 1rem;
 }
+
+#header-carrinho h1{
+    margin-left: -6rem;
+    font-size: 2rem;
+}
+
+#header-carrinho button {
+    width: 1.4rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+}
+
+/*termina o header*/
+/*comeca o main*/
 
 #main-carrinho {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    flex-direction: row;
+    height: 100%;
 }
 
-#caixa-produto-carrinho {
+.caixa-compra {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0 0 10px rgba(58, 58, 58, 0.283);
-    border-radius: 10px;
+    border-radius: 1rem;
+    border: solid .05rem #28a745;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .8rem;
 }
 
-#caixa-produto-carrinho img {
-    width: 100%;
-    width: 80px;
-    object-fit: cover;
+.caixa-compra img {
+    width: 5rem;
 }
 
-#caixa-produto-carrinho button {
+.caixa-compra h1 {
+    font-size: 1.2rem;
+}
+
+.caixa-compra #remover {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #fff;
+    color: #28a745;
+    font-size: .8rem;
+    width: 1.4rem;
+    padding: .3rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.info-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.info-linha #contador {
+    display: flex;
+    border-radius: .5rem;
+    border: solid 0.05rem #272727;
+}
+
+.botoes-contador {
+    font-size: 1.1rem;
+    padding: .1rem;
+    margin: .3rem;
+}
+
+#diminuir, #somar {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#somar {
     color: #28a745;
 }
 
-#contador {
-    display: flex;
-
+#quantidade {
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    font-size: 1.1rem;
 }
 
+/*Terminar o main*/
+/*comeca o footer*/
 
+#footer-carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.537);
+}
+
+#footer-carrinho #linha1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#linha1 span {
+    color: #272727;
+}
+
+#finalizar {
+    padding: 1rem;
+}
+
+#finalizar button {
+    background-color: #28a745;
+    color: #fff;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    padding: .2rem;
+}
