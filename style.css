@@ -89,13 +89,16 @@ button:hover {
 }
 
 #container-carrinho {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
-    width: 30%;
-    margin-top: 25rem; /*mudar*/
+    height: 80vh;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(58, 58, 58, 0.537);
+}
+
+#container-carrinho.ativo {
+    display: flex;
 }
 
 /*comeca o header do carrinho*/

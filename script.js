@@ -29,3 +29,14 @@ somarButton.addEventListener('click',() => {
     quantidadeButton.value = value;
 });
 
+diminuirButton.addEventListener('click',() => {
+    if (value > 0){
+        value--;
+        quantidadeButton.value = value;
+    }
+});
+
+// abrir e fechar carrinho 
+
+
+
