@@ -33,6 +33,8 @@ diminuirButton.addEventListener('click',() => {
     if (value > 0){
         value--;
         quantidadeButton.value = value;
+    } else {
+        alert('Você não pode diminuir mais!');
     }
 });
 

@@ -183,15 +183,17 @@ button:hover {
 
 .info-linha {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin-top: 1rem;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
 }
 
 .info-linha #contador {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: .5rem;
     border: solid 0.05rem #272727;
 }
@@ -211,7 +213,7 @@ button:hover {
     position: absolute;
     content: '';
     height: .13rem;
-    width: 5.22rem;
+    width: 100%;
     background-color: #28a745;
     bottom: -.3rem;
 }
