@@ -89,12 +89,12 @@ button:hover {
 }
 
 #container-carrinho {
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(58, 58, 58, 0.537);
+    width: 45%;
 }
 
 #container-carrinho.ativo {
@@ -162,7 +162,7 @@ button:hover {
 }
 
 .caixa-compra h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .caixa-compra #remover {
@@ -200,6 +200,20 @@ button:hover {
     font-size: 1.1rem;
     padding: .1rem;
     margin: .3rem;
+}
+
+#soma-preco {
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#soma-preco::before {
+    position: absolute;
+    content: '';
+    height: .13rem;
+    width: 5.22rem;
+    background-color: #28a745;
+    bottom: -.3rem;
 }
 
 #diminuir, #somar {
@@ -251,4 +265,5 @@ button:hover {
     border: none;
     font-size: 1.2rem;
     padding: .2rem;
+    cursor: pointer;
 }
