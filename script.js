@@ -14,21 +14,19 @@ produtos.forEach( function(produto){
 
 document.getElementById('container').innerHTML = conteudoProdutos;
 
-// aqui é para fazer funcionar o carrinho de compras.
-
-// contador
+// contador do carrinho 
 
 const diminuirButton = document.getElementById('diminuir');
 const somarButton = document.getElementById('somar');
 const quantidadeButton = document.getElementById('quantidade');
-
+ 
 let value = quantidadeButton.value;
-
+ 
 somarButton.addEventListener('click',() => {
     value = ++value;
     quantidadeButton.value = value;
 });
-
+ 
 diminuirButton.addEventListener('click',() => {
     if (value > 0){
         value--;
@@ -38,7 +36,13 @@ diminuirButton.addEventListener('click',() => {
     }
 });
 
+// aqui é para fazer funcionar o carrinho de compras.
+
 // abrir e fechar carrinho 
 
+function abrirCarrinho() {
+    const carrinho = document.getElementById("container-carrinho");
+    
+}
 
 
