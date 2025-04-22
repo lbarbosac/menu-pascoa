@@ -18,7 +18,7 @@
 <body>
     <header>
         <h1>Feliz Pascoa!</h1>
-        <button id="btnAbrir" onclick="abrirCarrinho()" style="background-color: transparent; border: none;">
+        <button id="svg-carrinho" onclick="abrirCarrinho()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
                 viewBox="0 0 16 16">
                 <path
@@ -32,7 +32,7 @@
             <h1></h1>
             <div id="caixa-produto2">
                 <h2 id="preco"></h2>
-                <button></button>
+                <button onclick="abrirCarrinho()"></button>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
             <div class="caixa-compra">
                 <img src="" alt="ovo-da-patrulha-canina">
                 <h1>Ovo da Patrulha Canina</h1>
-                <button id="remover" style="background-color: transparent;">X</button>
+                <button onclick="fecharCaixaDeCompra()" id="remover">X</button>
                 <div class="info-linha">
                     <div id="contador">
                         <button class="botoes-contador" id="diminuir">-</button>
@@ -59,12 +59,12 @@
                     </div>
                     <div id="soma-preco">R$ 79.99</div>
                 </div>
-            </div>
+            </div>     
         </div>
         <div id="footer-carrinho">
             <div id="linha1">
                 <h1>total:</h1>
-                <span>0</span>
+                <span></span>
             </div>
             <div id="finalizar">
                 <button>continuar</button>

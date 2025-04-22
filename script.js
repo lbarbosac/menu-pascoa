@@ -1,10 +1,10 @@
 
 const produtos = [
-    {imagem:'testes-js/img/ovo-sonho-de-valsa-sem-fundo.png', produto: 'Ovo de Páscoa Sonho de Valsa', preco: 59.90},
-    {imagem: 'testes-js/img/ovo-bis-chocolate-sem-fundo.png', produto: 'Ovo de Páscoa Chocolate ao Leite', preco: 69.90},
-    {imagem: 'testes-js/img/ovo-patrulha-canina-sem-fundo.png', produto: 'Ovo de Páscoa Patrulha Canina', preco: 79.90},
-    {imagem: 'testes-js/img/ovo-ouro-branco-sem-fundo.png', produto: 'Ovo de Páscoa Ouro Branco 359g', preco: 89.90},
-    {imagem: 'testes-js/img/ovo-tripla-camada-avela-sem-fundo.png', produto: 'Ovo de Páscoa Triplo Avelã 320g', preco: 99.99}
+    {imagem: 'img/ovo-sonho-de-valsa-sem-fundo.png', produto: 'Ovo de Páscoa Sonho de Valsa', preco: 59.90},
+    {imagem: 'img/ovo-bis-chocolate-sem-fundo.png', produto: 'Ovo de Páscoa Chocolate ao Leite', preco: 69.90},
+    {imagem: 'img/ovo-patrulha-canina-sem-fundo.png', produto: 'Ovo de Páscoa Patrulha Canina', preco: 79.90},
+    {imagem: 'img/ovo-ouro-branco-sem-fundo.png', produto: 'Ovo de Páscoa Ouro Branco 359g', preco: 89.90},
+    {imagem: 'img/ovo-tripla-camada-avela-sem-fundo.png', produto: 'Ovo de Páscoa Triplo Avelã 320g', preco: 99.99}
 ];
 
 let conteudoProdutos = '';
@@ -41,12 +41,12 @@ diminuirButton.addEventListener('click',() => {
 // abrir e fechar carrinho 
 
 function abrirCarrinho() {
-    const carrinho = document.getElementById("container-carrinho");
+    const carrinho = document.getElementById('container-carrinho');
     carrinho.style.display = 'flex';
 };
 
-function fecharCarrinho(){
-    const carrinho = document.getElementById("container-carrinho");
+function fecharCarrinho() {
+    const carrinho = document.getElementById('container-carrinho');
     carrinho.style.display = 'none';
 }
 
@@ -55,5 +55,12 @@ function fecharCarrinho(){
 
 //const btnFechar = document.getElementById('btnFechar');
 //btnFechar.addEventListener('click', fecharCarrinho)
+
+// aqui vai fechar a caixa de compra que esta lá dentro do carrinho, caixa de produtos
+
+function fecharCaixaDeCompra() {
+    const fecharProduto = document.querySelector('.caixa-compra');
+    fecharProduto.style.display = 'none';
+}
 
 

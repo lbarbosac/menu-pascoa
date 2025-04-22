@@ -22,6 +22,12 @@ header svg {
     height: 30px;
     width: 30px;
     cursor: pointer;
+    color: #fff;
+}
+
+#svg-carrinho {
+    background-color: transparent;
+    border: none;
 }
 
 header svg:hover {
@@ -100,6 +106,8 @@ button:hover {
     top: 0;
     right: 0;
     transition: ease 500ms;
+    background-color: #f5f5f5;
+    color: #28a745;
 }
 
 /*comeca o header do carrinho*/
@@ -122,7 +130,7 @@ button:hover {
 }
 
 #header-carrinho h1{
-    margin-left: -6rem;
+    margin-left: -15rem;
     font-size: 2rem;
 }
 
@@ -141,7 +149,11 @@ button:hover {
 
 #main-carrinho {
     display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow: hidden;
     height: 100%;
+    padding: .5rem;
 }
 
 .caixa-compra {
@@ -173,7 +185,7 @@ button:hover {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #fff;
+    background-color: transparent;
     color: #28a745;
     font-size: .8rem;
     width: 1.4rem;
@@ -204,6 +216,7 @@ button:hover {
     font-size: 1.1rem;
     padding: .1rem;
     margin: .3rem;
+    background-color: #f5f5f5;
 }
 
 #soma-preco {
@@ -221,7 +234,7 @@ button:hover {
 }
 
 #diminuir, #somar {
-    background-color: #fff;
+    background-color: #f5f5f5;
     border: none;
     cursor: pointer;
 }
@@ -233,7 +246,7 @@ button:hover {
 #quantidade {
     text-align: center;
     border: none;
-    background-color: #fff;
+    background-color: #f5f5f5;
     font-size: 1.1rem;
 }
 
