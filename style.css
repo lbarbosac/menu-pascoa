@@ -177,7 +177,7 @@ button:hover {
     font-size: 1.5rem;
 }
 
-.caixa-compra #remover {
+.caixa-compra .remover {
     display: flex;
     justify-content: end;
     align-items: start;
@@ -203,7 +203,7 @@ button:hover {
     padding: .5rem 1rem;
 }
 
-.info-linha #contador {
+.info-linha .contador {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -215,15 +215,17 @@ button:hover {
     font-size: 1.1rem;
     padding: .1rem;
     margin: .3rem;
+    border: none;
+    cursor: pointer;
     background-color: #f5f5f5;
 }
 
-#soma-preco {
+.soma-preco {
     font-size: 1.3rem;
     position: relative;
 }
 
-#soma-preco::before {
+.soma-preco::before {
     position: absolute;
     content: '';
     height: .13rem;
@@ -232,17 +234,7 @@ button:hover {
     bottom: -.3rem;
 }
 
-#diminuir, #somar {
-    background-color: #f5f5f5;
-    border: none;
-    cursor: pointer;
-}
-
-#somar {
-    color: #28a745;
-}
-
-#quantidade {
+.quantidade {
     text-align: center;
     border: none;
     background-color: #f5f5f5;
