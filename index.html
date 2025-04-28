@@ -47,24 +47,12 @@
             <button id="btnFechar" onclick="fecharCarrinho()">X</button>
         </div>
         <div id="main-carrinho">
-            <div class="caixa-compra">
-                <img src="" alt="ovo-da-patrulha-canina">
-                <h1>Nome do Produto</h1>
-                <button onclick="fecharCaixaDeCompra()" class="remover">X</button>
-                <div class="info-linha">
-                    <div class="contador">
-                        <button class="botoes-contador" class="diminuir" id="diminuir">-</button>
-                        <input type="text" value="0" disabled class="quantidade" id="quantidade">
-                        <button class="botoes-contador" class="somar" id="somar" style="color: #28a745;">+</button>
-                    </div>
-                    <div class="soma-preco">R$ 79.99</div>
-                </div>
-            </div>
+            <div class="caixa-compra"></div>
         </div>
         <div id="footer-carrinho">
             <div id="linha1">
                 <h1>total:</h1>
-                <span></span>
+                <span id="valor-final">valor final</span>
             </div>
             <div id="finalizar">
                 <button>continuar</button>
