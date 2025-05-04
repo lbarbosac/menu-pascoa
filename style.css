@@ -156,8 +156,7 @@ button:hover {
 #main-carrinho {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    overflow: hidden;
+    overflow-y: auto;
     height: 100%;
     padding: .5rem;
 }
@@ -185,7 +184,7 @@ button:hover {
     margin-top: .9rem;
 }
 
-.caixa-compra .remover {
+.remover {
     display: flex;
     position: absolute;
     top: 0;
@@ -209,7 +208,7 @@ button:hover {
     padding: .5rem 1rem;
 }
 
-.info-linha .contador {
+.contador {
     display: flex;
     justify-content: space-around;
     align-items: center;
