@@ -24,7 +24,7 @@
                 <path
                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
             </svg>
-        </button>    
+        </button>
     </header>
     <div id="container"></div>
     <div id="container-carrinho">
@@ -38,15 +38,15 @@
             <button id="btnFechar" onclick="fecharCarrinho()">X</button>
         </div>
         <div id="main-carrinho">
-            <div class="caixa-compra" id="caixa-compra">
+            <div class="produto-carrinho" id="produto-carrinho">
                 <img src="img/ovo-patrulha-canina-sem-fundo.png" alt="ovo-da-patrulha-canina">
                 <h1>Ovo da Patrulha Canina</h1>
-                <button class="remover" id="remover" onclick="fecharCaixaDeCompra()">X</button>
+                <button class="remover" id="remover" onclick="removerProdutoDoCarrinho()">X</button>
                 <div class="info-linha">
                     <div class="contador">
-                        <button class="botoes-contador" id="diminuir">-</button>
-                        <input type="text" value="0" disabled class="quantidade" id="quantidade">
-                        <button class="botoes-contador" id="somar">+</button>
+                        <button class="botoes-contador" id="remover-produto">-</button>
+                        <input type="text" value="0" disabled class="quantidade" id="quantidade-produto">
+                        <button class="botoes-contador" id="adicionar-produto">+</button>
                     </div>
                     <div id="soma-preco">R$ 79.99</div>
                 </div>
@@ -55,14 +55,14 @@
         <div id="footer-carrinho">
             <div id="linha1">
                 <h1>total:</h1>
-                <span id="valor-final">valor final</span>
+                <span id="valor-final">-</span>
             </div>
             <div id="finalizar">
                 <button>continuar</button>
             </div>
         </div>
     </div>
-    
+
     <script src="./script.js"></script>
 </body>
 
